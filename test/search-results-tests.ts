@@ -10,7 +10,7 @@ describe('Print hello', function () {
         driver = await beforeEachTest(this);
     });
 
-    // describe('Landing Page', function () {
+    describe('Landing Page', function () {
 
         it(`Landing page should load #smoke`, async  function () {
             console.log("Hello from the first test");
@@ -18,12 +18,8 @@ describe('Print hello', function () {
             await sleep(4000);
         });
 
-        it.only(``, async  function () {
-            await new LandingPage().assertUrl(`http://youtube.com`)
-        });
-
         afterEach(async function () {
             await afterEachTest(driver, this);
         });
-    // });
+    });
 });
