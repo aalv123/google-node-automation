@@ -1,0 +1,8 @@
+--require ts-node/register ./test/*-tests.ts
+--ui tdd
+--unhandled-rejections=strict
+--timeout 600000
+--exit
+--retries 2
+--reporter mocha-allure-reporter
+

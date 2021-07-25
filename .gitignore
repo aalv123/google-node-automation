@@ -1,0 +1,14 @@
+# Test execution output
+*/output/
+
+# Dependencies
+node_modules/
+
+# Allure reports
+/allure-*/
+
+# WebStorm
+.idea/*
+
+# Temporary doc files
+*.doc#
