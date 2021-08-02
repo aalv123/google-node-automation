@@ -14,11 +14,11 @@ export async function sleep(millis: number) {
  * @param testContext
  */
 export async function beforeEachTest(testContext: Mocha.Context): Promise<any> {
-    console.log('from beforEachTest of the helper file');
+    console.log('from beforeEachTest of the helper file');
     driver = await new Builder().forBrowser(`firefox`).build();
 
-    console.log('Attempting to navigate to google.com from beforEachTest of the helper file');
-    await driver.get(`http://google.com`);
+    console.log('Attempting to navigate to youtube.com from beforeEachTest of the helper file');
+    await driver.get(`https://youtube.com/`);
     await sleep(5000);
     return driver;
 }

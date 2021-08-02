@@ -1,6 +1,5 @@
 import {afterEachTest, beforeEachTest, sleep} from "../src/utils/utils";
 import {WebDriver} from "selenium-webdriver";
-import LandingPage from "../src/pages/landing-page";
 
 let driver: WebDriver;
 
