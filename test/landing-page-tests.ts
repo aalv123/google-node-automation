@@ -18,7 +18,7 @@ describe('Landing Page Tests', function () {
         await landingPage.isCurrent();
     });
 
-    it.only(`Assert search box exists on landing page #smoke`, async  function () {
+    it(`Assert search box exists on landing page #smoke`, async  function () {
         await landingPage.assertSearchBoxExists();
     });
 

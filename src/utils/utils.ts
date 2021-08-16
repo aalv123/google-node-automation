@@ -15,6 +15,7 @@ export async function sleep(millis: number) {
  */
 export async function beforeEachTest(testContext: Mocha.Context): Promise<any> {
     console.log('from beforeEachTest of the helper file');
+
     driver = await new Builder().forBrowser(`firefox`).build();
 
     console.log('Attempting to navigate to youtube.com from beforeEachTest of the helper file');
